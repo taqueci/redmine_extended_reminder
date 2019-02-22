@@ -1,5 +1,5 @@
 class RedmineExtendedReminder::SettingsController < ApplicationController
-  before_filter :require_login
+  before_action :require_login
 
   def update
     user = User.current
